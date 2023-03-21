@@ -1,0 +1,49 @@
+.box{
+    width: 800px;
+    height: 828px;
+    background-color:white;
+    /* 设置阴影 */
+    box-shadow: 10px 10px 5px black;
+    /* 通过自动外边距实现居中 */
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+body{
+    background-color: #888888;
+}
+
+h3{
+    margin:20px auto;
+    width: 100px;
+}
+
+.video1{
+    width: 800px;
+}
+
+hr{
+    margin-bottom: 10px;
+    width: 98%;
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+}
+
+span{
+    /* 1.将支持valign特性的对象的文本与对象底端对齐
+    2.使用两个div来对img和文字进行页面布局
+    3.把图片作为文字的背景 */
+    vertical-align:bottom;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    font-size: medium;
+}

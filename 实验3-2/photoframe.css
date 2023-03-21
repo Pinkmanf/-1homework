@@ -1,0 +1,17 @@
+#container {
+    border: 1px solid black;
+    width: 250px;
+    height: 220px;
+    float: left;
+}
+
+.folder{
+    background:url(./folder.png);
+    background-repeat: no-repeat;
+    margin: 10px 10px 10px 10px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 100px;
+}

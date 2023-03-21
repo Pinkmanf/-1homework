@@ -1,0 +1,238 @@
+#demo {
+    float: left;
+    background: #FFF;
+    /* 当内容元素的高度宽度大于其包含块的高度宽度时，设置该属性即可把内容区域超出来的部分隐藏，使内容区域完全包含在该包含块中。 */
+    overflow: hidden;
+    border: 1px dashed #CCC;
+    width: 520px;
+    text-align: center;
+}
+
+#demo img {
+    border: 3px solid #F2F2F2;
+}
+
+#indemo {
+    width: 800%;
+}
+
+#indemo,
+#demo1,
+#demo2 {
+    float: left;
+}
+
+/* 触发弹窗图片的样式 */
+.myImg {
+    border-radius: 5px;
+    /* 光标为一只手 */
+    cursor: pointer;
+    /* 使其平滑的改变 */
+    transition: 0.3s;
+}
+
+.myImg:hover {
+    /* 不透明度 */
+    opacity: 0.7;
+}
+
+/* 弹窗背景 */
+.modal {
+    display: none;
+    /* 使滚动页面，它也始终位于同一位置。 */
+    position: fixed;
+    /* 设置元素的堆叠顺序 */
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* 如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。 */
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* 图片 */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* 关闭按钮 */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 小屏幕中图片宽度为 100% */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* 页面整体设计 */
+body {
+    background-color: white;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 990px;
+    font-size: 14px;
+}
+
+/*页眉*/
+header {
+    height: 330px;
+    background: url(./images/jnptop1.jpg) no-repeat;
+    text-align: center;
+    width: 990px;
+}
+
+/*容器*/
+#container {
+    text-align: center;
+    width: 990px;
+    margin: 0px auto;
+}
+
+/*左侧栏*/
+aside#leftAside {
+    float: left;
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    background-color: #E1E0DB;
+}
+
+/*左侧栏-标题*/
+aside#leftAside h1 {
+    height: 40px;
+    margin: 0px;
+}
+
+/*左侧栏-内容*/
+aside#leftAside div {
+    height: 150px;
+    text-align: center;
+    margin-left: 7px;
+}
+
+
+/*右侧栏*/
+aside#rightAside {
+    float: left;
+    width: 260px;
+    height: 350px;
+    text-align: center;
+    /* 当内容元素的高度大于其包含块的高度时，设置该属性即可把内容区域超出来的部分隐藏，使内容区域完全包含在该包含块中。 */
+    overflow: hidden;
+    margin-left: 5px;
+    background-color: #E1E0DB;
+}
+
+/*右侧栏-标题*/
+aside#rightAside h1 {
+    width: 264px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*右侧栏-新闻*/
+aside#rightAside div#news {
+    width: 264px;
+    height: 170px;
+}
+
+/*右侧栏-联系我们*/
+aside#rightAside div#contact {
+    width: 264px;
+    height: 130px;
+}
+
+/*右侧栏-新闻-列表*/
+#news ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+/*右侧栏-新闻-列表选项*/
+#news ul li {
+    font-size: x-small;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*右侧栏-新闻-超链接*/
+#news a {
+    text-decoration: none;
+    color: black;
+}
+
+/*产品展示栏*/
+section#productShow {
+    width: 990px;
+    height: 295px;
+    /* 清除浮动 */
+    clear: both;
+    text-align: center;
+    background-color: #E1E0DB;
+    margin-bottom: 7px;
+    padding: 0px;
+}
+
+/*产品展示栏-标题*/
+section#productShow h1 {
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*产品展示栏-表格*/
+section#productShow table {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 245px;
+}
+
+/*产品展示栏-单元格*/
+section#productShow td {
+    height: 50%;
+}
+
+/*产品展示栏-单元格内图片*/
+section#productShow td img {
+    width: 100%;
+    height: 100%;
+}
+
+/*页脚*/
+footer {
+    text-align: center;
+    /* 垂直对齐 */
+    vertical-align: middle;
+    height: 70px;
+    background-color: #E1E0DB;
+    padding: 7px 0;
+    float: left;
+    width: 990px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简单电子日历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+
+        body{
+            text-align: center;
+            background-image: url(./天蓝色.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        table{
+            margin: 0px auto;
+            font-size: 40px;
+            border-collapse: collapse;
+        }
+        h1{
+            display: inline-block;
+        }
+        button{
+            font-size: large;
+            background-color: rgb(53,116,174);
+        }
+    </style>
+
+</head>
+
+<body>
+    简单电子日历
+    <hr>
+    <div class="card">
+
+        <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">上个月</button>
+        <h1 class="card-header" id="monthAndYear"></h3>
+        <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">下个月</button>
+        <table class="table table-bordered table-responsive-sm" id="calendar">
+            <thead>
+                <tr>
+                    <th>日</th>
+                    <th>一</th>
+                    <th>二</th>
+                    <th>三</th>
+                    <th>四</th>
+                    <th>五</th>
+                    <th>六</th>
+                </tr>
+            </thead>
+
+            <tbody id="calendar-body">
+
+            </tbody>
+        </table>
+
+        <br />
+        <form class="form-inline">
+            <label class="form-control col-sm-4" name="month" id="month"></label>
+            <label for="year" class="form-control col-sm-4" name="year" id="year"></label>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.picture {
+  border: 1px solid black;
+}
+
+#main {
+  float: left;
+  margin-left: 150px;
+}
+
+#step {
+  margin-left: 100px;
+}
+h2{
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align:center;
+
+}
+#name{
+  margin-left: 320px;
+}
+
+#restart {
+  width: 200px;
+  height: 80px;
+  background-color: pink;
+  color: white;
+  font-size: large;
+  margin-left: 150px;
+  border: 1px solid pink;
+  border-radius: 10px;
+}
+#restart:hover{
+  background-color: red;
+}
+
+#window {
+  width: 800px;
+  height: 800px;
+  background-color: white;
+  box-shadow: 10px 10px 5px black;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+body{
+  background-color: #888888;
+
+}

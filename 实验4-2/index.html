@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册页面</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div>
+        <h1>用户注册页面</h1>
+        <hr>
+        <!-- autocomplete设为on代表浏览器记录输入的内容，但type设为password不会存储 -->
+        <form  class="form" onsubmit="subfunction()" autocomplete="on">
+            <!-- required代表必选 -->
+            <!-- &#8195代表空格 -->
+            <span>用户名:</span>&#8195;<input type="text" placeholder="请输入用户名" required >
+            <br><br>
+            <span>密&#8195;码:</span>&#8195;<input id="password1" type="password" placeholder="请输入密码" required >
+            <br><br>
+            <span>确&#8195;认:</span>&#8195;<input id="password2" type="password" placeholder="请再次输入密码" required >
+            <br><br>
+            <span>姓&#8195;名:</span>&#8195;<input type="text" placeholder="请输入真实姓名" required >
+            <br><br>
+            <!-- type设为email可判断是否输入正确的邮箱地址 -->
+            <span>邮&#8195;箱:</span>&#8195;<input type="email" placeholder="请输入电子邮箱" required >
+            <br><br><br>
+            <input type="submit" class="submit" value="提交注册">
+        </form>
+    </div>
+    <script src="./4-2.js"></script>
+</body>
+
+</html>

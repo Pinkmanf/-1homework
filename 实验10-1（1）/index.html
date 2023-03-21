@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇小游戏</title>
+    <link rel="stylesheet" href="./10-1.css">
+</head>
+
+<body>
+    <h3>基于HTML5的贪吃蛇小游戏</h3>
+    <hr>
+    <!-- 选择难度 -->
+    <div class="speed">
+        难度:
+        <select id="speed">
+
+            <option value="250">--请选择难度--</option>
+            <option value="400">1</option>
+            <option value="350">2</option>
+            <option value="300">3</option>
+            <option value="250">4</option>
+            <option value="200">5</option>
+        </select>
+    </div>
+    <!-- 选择人数 -->
+    <div class="double">
+        人数:
+        <select id="double">
+
+            <option value="">--请选择人数--</option>
+            <option value="">1</option>
+            <option value="">2</option>
+        </select>
+    </div>
+    <!-- 分数相关 -->
+    <div class="score">
+        <span id="score1">历史最高分:0</span>
+        <span id="score2">玩家1得分:0</span>
+        <span id="score3">玩家2得分:0</span>
+    </div>
+    <br>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #c3c3c3;"></canvas>
+    <br>
+    <!-- 按钮相关 -->
+    <button id="button1" onclick="restart()">重新开始</button>
+    <button id="button2" onclick="start()">开始</button>
+    <script src="./10-1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单电子时钟</title>
+    <style>
+        div{
+            color: red;
+            font-size: 70px;
+            /* 设置为行内块 */
+            display: inline-block;
+        }
+        #hour,#minute,#second{
+            /* 设置边框 */
+            border: 1px solid black;
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    简单电子时钟的设计与实现
+    <hr>
+    <!-- 分别设置每个div块 -->
+    <div id="hour">
+    </div>
+    <div>:</div>
+    <div id="minute"></div>
+    <div>:</div>
+    <div id="second"></div>
+    <script>
+        function update(){
+            // 新建一个日期对象，可以使用Date里面的所有方法
+	var dateobj = new Date();
+    // 调用date里面的方法获得时分秒
+	var hour = dateobj.getHours();
+	var minutes = dateobj.getMinutes();
+	var seconds = dateobj.getSeconds();
+    // 当时分秒小于10时就在第一位补零
+	var realhour = (hour<10?"0"+hour:hour) ;
+    var realminutes=(minutes<10?"0"+minutes:minutes);
+    var realseconds=(seconds<10?"0"+seconds:seconds); 
+    // 通过寻找html里面的ID将时分秒数据注入html 
+	document.getElementById("hour").innerHTML= realhour;
+	document.getElementById("minute").innerHTML= realminutes;
+	document.getElementById("second").innerHTML= realseconds;
+}
+// 1000ms更新一次，调用一次update这个函数
+setInterval(update,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单音乐播放器</title>
+    <link rel="stylesheet" href="./6-1.css">
+
+</head>
+
+<body>
+
+    简单音乐播放器
+    <hr>
+    <!-- 设置默认的播放音乐 -->
+    <audio id="music" src="./儿童歌曲-大耳朵图图.mp3" preload autoplay>
+    </audio>
+    <img width="300" height="300" src="./music.jpg" />
+    <div id="content">
+        <!-- type为range表示拖动来实现范围 -->
+        <input id="volume" type="range" min="0" max="1" step="0.1" />
+        <div id="playname">当前正在播放: <span id="title"></span></div>
+        <div>
+            <button class="previous" onclick="previousm()"><img src="./previous.png" width="50" height="50" /> </button>
+            <button id="beginpause" onclick="beginPause()"><img src="./begin.png" width="50" height="50" />
+            </button>
+            <button class="next" onclick="nextm()"><img src="./next.png" width="50" height="50" /> </button>
+        </div>
+    </div>
+    <script src="./6-1.js"></script>
+</body>
+</html>

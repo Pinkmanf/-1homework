@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿回收站效果的设计与实现</title>
+    <link rel="stylesheet" href="./photoframe.css">
+    <script type="text/javascript" src="./3-2.js"></script>
+</head>
+<body>
+    仿回收站效果的设计与实现
+    <hr>
+    <div id="container" >
+    <div id="file1" class="folder" draggable="true" ondragstart="drag(event) ">文件1</div>
+    <div id="file2" class="folder" draggable="true" ondragstart="drag(event) ">文件2</div>
+    <div id="file3" class="folder" draggable="true" ondragstart="drag(event) ">文件3</div>
+    <div id="file4" class="folder" draggable="true" ondragstart="drag(event) ">文件4</div>
+    </div>
+    <div class="recycle">
+        <img src="./recycle.jpg" alt="回收站" ondragover="allow(event)" ondrop="drop(event)" >
+    </div>
+</body>
+</html>

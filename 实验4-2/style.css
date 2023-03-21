@@ -1,0 +1,45 @@
+hr{
+    border-top: 5px solid #66CCFF;
+    width: 700px;
+}
+h1{
+    position: relative;
+    top:10px;
+    color: #66CCFF;
+    text-align:center;
+    margin-top: 50px;
+}
+div{
+    width: 800px;
+    height: 500px;
+    background-color:white;
+    box-shadow: 10px 10px 5px black;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+body{
+    background-color: #888888;
+}
+span{
+    font-size: x-large;
+    color: #66CCFF;
+}
+form{
+    margin-left: 250px;
+
+}
+input{
+    width: 200px;
+    height: 30px;
+    font-size:large
+}
+.submit{
+    margin-left: 50px;
+    background-color: #66CCFF;
+    color: white;
+    border: none;
+    height: 50px;
+}
+.submit:hover{
+    background-color: blue;
+}
