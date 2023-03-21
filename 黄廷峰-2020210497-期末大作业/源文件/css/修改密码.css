@@ -1,0 +1,72 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../资源文件/img/back.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#change
+{
+	margin: 0 auto;	
+	margin-top: 100px; 
+	padding: 5px 40px;
+	background-color: #c0e3ff;
+	width: 730px;
+	height: 30px;
+	text-align: center;	
+}
+#change h1{
+	color: #2c2b2b;
+	position: relative;
+	height: 80px;
+	width: 690px;
+}
+
+.inputText
+{
+	margin-top: 30px;
+}
+
+
+.inputText input
+{
+	border: 0;
+	padding: 10px 10px;	/* 输入框内的间距 */
+	border-bottom: 1px solid #000000;	/* 输入框白色下划线 */
+	background-color: #faf4f400;	/* 输入框透明 */
+	color: #000000;	
+}
+.w1{
+	position: relative;
+	height: 0px;
+	width: 500px;
+}
+.w2{
+	position: absolute;
+	height: 0px;
+	width: 500px;
+}
+.w3{
+	position: absolute;
+	height: 0px;
+	width: 500px;
+}
+.sure
+{
+	margin-top: 32px;
+	margin-right: 20px;
+	width: 150px;
+	height: 50px;
+	color: #0a0a0a;
+	border: 10px;
+	border-radius: 20px;
+	font-size: 25px;
+	position: relative;
+	cursor: pointer;
+}
+.sure:hover{
+	background-color: pink;
+}

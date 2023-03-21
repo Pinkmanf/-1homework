@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background:white;
+}
+
+body{
+    margin-top: 150px;
+    margin-left:550px;
+    height: 362px;
+    width: 400px;
+    box-shadow: 1px 1px 2px 4px rgb(194, 192, 192);
+}
+
+.login-h{
+    position: relative;
+    color: white;
+    background: linear-gradient(to right,rgba(17, 179, 243, 0.822),rgba(63, 8, 216, 0.596));
+    width: 400px;
+    height: 60px;
+}
+
+.login-h span{
+    width: 197px;
+    height: 60px;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.login-b div{
+    margin: 20px 0px;
+}
+
+.dom1{
+    color:rgba(17, 179, 243, 0.822);
+}
+
+.login-b input[name="username"],.login-b input[name="password"]{
+    width: 300px;
+    height: 35px;
+    margin-left: 50px;
+    border-radius: 3px;
+    border: 1px solid #88d3e6;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.login-b input[name="submit"]{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #88d3e6;
+    background:rgba(17, 179, 243, 0.822);
+    cursor: pointer;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.login-b input[name="submit"]:hover{
+    opacity: 0.6;
+}
+
+.login-b input[name="submit1"]{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #c8bbeb;
+    background:rgba(63, 8, 216, 0.596);
+    cursor: pointer;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.login-b input[name="submit1"]:hover{
+    opacity: 0.6;
+}
+
+.s1{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.s3 span{
+    margin-left: 120px;
+}
+
+.s3 a:hover{
+    opacity: 0.6;
+}
+
+.s3 a{
+    text-decoration: none;
+    color: rgba(17, 179, 243, 0.822);
+}
+
+.s4 p{
+    margin-left: 20px;
+}
+.s4 a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+h4{
+    margin-left: 50px;
+}

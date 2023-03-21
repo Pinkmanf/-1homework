@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改密码</title>
+    <link rel="stylesheet" href="../css/修改密码.css" type="text/css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div id="change">
+    <h1>修改密码</h1>
+            <div class="inputText">
+                <div class="w1">用户名:</div>
+                <input type="text" name="username" id="usernameup" placeholder="请输入用户名" />
+            </div>
+            <div class="inputText">
+                <div class="w2">原密码:</div>
+                <input type="password" name="password" id="passworduse" placeholder="请输入原密码" />
+            </div>
+            <div class="inputText">
+                <div class="w3">新密码:</div>
+                <input type="password" name="password1" id="passwordup" placeholder="请输入新密码" />
+            </div>
+        <input class="sure" type="button" value="确认修改" onclick="update()" />
+        <input class="sure" type="button" value="返回" onclick="window.history.go(-1)" />
+    </div>
+</body>
+</html>

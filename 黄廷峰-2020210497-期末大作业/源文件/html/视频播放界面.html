@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体播放器</title>
+    <link rel="stylesheet" href="../css/媒体界面.css">
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="left">
+            <img class="headback" src="../../资源文件/img/headback.png" alt="">
+            <img class="head" src="../../资源文件/img/head.png" alt="">
+            <p class="name">Wellcome</p>
+            <button class="change" type="button" onclick="myaudio()">
+                我的音视频
+            </button>
+            <button class="change" type="button" onclick="updat()">
+                修改密码
+            </button>
+            <button class="change" type="button" onclick="go()">
+                退出登录
+            </button>
+            <img class="stripe" src="../../资源文件/img/信息.png" alt="">
+            <h2>HELLO! </h2>
+            <h3>NICE TO MEET YOU</h3>
+        </div>
+        <div class="right">
+            <video src="../../资源文件/movie/广阳岛.MP4" controls type="video/mp4" id="video1"></video>
+            <button class="previous" onclick="previousv()">上一个</button>
+            <button class="next" onclick="nextv()">下一个 </button>
+            <button class="btn" onclick="change()">音乐播放</button>
+
+        </div>
+    </div>
+    </div>
+    <script src="../js/audio.js">
+    </script>
+</body>
+
+</html>

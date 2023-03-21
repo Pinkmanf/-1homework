@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册账号</title>
+    <link rel="stylesheet" href="../css/注册.css" type="text/css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div id="change">
+    <h1>注册账号</h1>
+            <div class="inputText">
+                <!-- <form role="form" action="/user/register" method="get"> -->
+                <div class="w1">用户名:</div>
+                <input type="text" id="regiusername" name="username" placeholder="请输入用户名" autocomplete="off" />
+            </div>
+            <div class="inputText">
+                <div class="w2">密码:</div>
+                <input type="password" id="regipassword" name="password" placeholder="请输入6~18位数字或字符" />
+            </div>
+        <input class="sure" type="submit" value="确认" onclick="register()"/>
+        <input class="sure" type="submit" value="返回" onclick="window.history.go(-1)"/>
+    </div>
+</body>
+</html>

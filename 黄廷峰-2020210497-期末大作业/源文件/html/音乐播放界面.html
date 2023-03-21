@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体播放器</title>
+    <link rel="stylesheet" href="../css/媒体界面.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="left">
+            <img class="headback" src="../../资源文件/img/headback.png" alt="">
+            <img class="head" src="../../资源文件/img/head.png" alt="">
+            <p class="name">Wellcome</p>
+            <button class="change" type="button" onclick="myaudio()">
+                我的音视频
+            </button>
+            <button class="change" type="button" onclick="updat()">
+                修改密码
+            </button>
+            <button class="change" type="button" onclick="go()">
+                退出登录
+            </button>
+            <img class="stripe" src="../../资源文件/img/信息.png" alt="">
+            <h2>HELLO! </h2>
+            <h3>NICE TO MEET YOU</h3>
+        </div>
+        <div class="right">
+            <!-- <img src="../img/2.gif" alt="" height="450px" id="img1"> -->
+            <canvas width="980px" height="200px" class="can"></canvas>
+            <audio id="music" src="../../资源文件/music/儿童歌曲-大耳朵图图.mp3" controls autoplay>
+            </audio>
+            <button class="previous" onclick="previousm()">上一首</button>
+            <button class="next" onclick="nextm()">下一首 </button>
+            <button class="btn" onclick="change1()">视频播放</button>
+
+        </div>
+    </div>
+    </div>
+    <script src="../js/audio.js">
+
+    </script>
+</body>
+
+</html>
